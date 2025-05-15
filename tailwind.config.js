@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
@@ -11,8 +10,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#0A101E',
-        secondary: '#FEC544',
+        primary: '#0A101E', // Your original dark blue
+        secondary: '#FEC544', // Your original yellow
       },
     },
   },
@@ -24,21 +23,7 @@ module.exports = {
           justifyContent: 'center',
           alignItems: 'center',
         },
-        '.flex-between': {
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        },
-        '.flex-start': {
-          display: 'flex',
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-        },
-        '.flex-end': {
-          display: 'flex',
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-        },
+        // ... keep your other utility classes
       };
       addUtilities(newUtilites, ['responsive', 'hover']);
     }),

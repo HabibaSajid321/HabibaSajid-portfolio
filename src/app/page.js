@@ -8,12 +8,14 @@ import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Contact from '@/components/Contacts';
+import Achievements from '@/components/Achievement';
 export default function Home() {
   return (
     <Box>
       
       <Header/>
       <Hero/>
+      <Achievements/>
       <About/>
       <Education/>
       <Experience/>
